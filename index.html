@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>typing speed test</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>typing speed</h1>
+    <p class="sub">type the passage below. timer starts on first keypress.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="label">time</span><span id="time">60</span></div>
+      <div class="stat"><span class="label">wpm</span><span id="wpm">0</span></div>
+      <div class="stat"><span class="label">acc</span><span id="acc">100</span>%</div>
+    </div>
+
+    <div id="passage" class="passage"></div>
+
+    <textarea id="input" placeholder="start typing here..." autocomplete="off" spellcheck="false"></textarea>
+
+    <div class="row">
+      <button id="reset">new passage</button>
+      <select id="limit">
+        <option value="30">30s</option>
+        <option value="60" selected>60s</option>
+        <option value="120">120s</option>
+      </select>
+    </div>
+
+    <div id="result" class="result hidden">
+      <h2>done</h2>
+      <p>wpm: <strong id="rWpm">0</strong></p>
+      <p>accuracy: <strong id="rAcc">0</strong>%</p>
+      <p>chars typed: <span id="rChars">0</span></p>
+      <p>time: <span id="rTime">0</span>s</p>
+    </div>
+  </div>
+
+  <script src="passages.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
