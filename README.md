@@ -1,5 +1,7 @@
 # typing-speed
 
+![](docs/screenshot.png)
+
 small typing test i wrote one evening. shows wpm and accuracy as you type. picks a random short paragraph from a hardcoded pool.
 
 ## how to run it
